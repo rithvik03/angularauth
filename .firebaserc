@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "a9authapp": {
+      "hosting": {
+        "a9authapp": [
+          "a9authapp"
+        ]
+      }
+    }
+  }
+}

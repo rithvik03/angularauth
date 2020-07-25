@@ -24,9 +24,13 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/jquery/dist/jquery.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -117,8 +121,16 @@
               "devServerTarget": "a9authapp:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "a9authapp"
+    }
+  },
+  "defaultProject": "a9authapp",
+  "cli": {
+    "analytics": "eeb992cb-181e-4354-bb0b-47bc5039819a"
+  }
 }
